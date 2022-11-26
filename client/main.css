@@ -1,0 +1,93 @@
+body{
+    background:url('hutao.jpg');
+    overflow: hidden;
+    background-size: cover ;
+    margin: 0px;
+}
+
+::-webkit-scrollbar{
+    background-color: #272727;
+}
+::-webkit-scrollbar-thumb{
+    background-color: white;
+}
+
+/**----------------- THEME COLOR ------------------**/
+:root{
+    --primary:black;
+    --secondary:blue;
+    --background:rgba(0,0,0,0.9);
+}
+
+/**----------------- CLASS SECTION ----------------**/
+.container{
+    color:rgb(255, 255, 255); 
+}
+
+/**----------------- ID SECTION -------------------**/
+/** MAIN CONTAINER PART **/
+#chatContainer{
+    position: absolute;
+    left:10%;
+}
+
+/** INSIDE OF CHAT CONTAINER **/
+.chatcont {
+    position: absolute;
+    background-color: var(--background);
+    color: white;
+    border: 1px solid white;
+    font-family:'HYWenHei 85W';
+}
+#chatBox{
+    overflow-y: scroll;overflow-x: hidden;
+}
+#typeBox{
+    box-sizing: border-box;
+    bottom:0%;
+    font-size: larger;
+    padding-inline-start: 2rem;
+}
+
+/** SIDE CONTAINER **/
+#sideContainer{
+    background-color: rgba( 0, 0, 0, 0.9);
+    position: absolute;
+    left: 0%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    border-right: 1px solid white;
+    top:0px;
+    bottom: 0px;
+}
+/** INSIDE OF THE SIDE BAR **/
+.sidebar{
+    color:white;
+    background-color: rgba(0,0,0,0);
+    text-align: center;
+    border: 1px solid white;
+}
+#sideSpace{
+    border:0;
+}
+
+/** CHAT MESSAGES **/
+.chatMessages{
+    /* border: 1px solid white; */
+    min-height: 10%;
+    height: auto;
+    width: 100%;
+}
+.messageText{
+    box-sizing: border-box;
+    padding-inline-start: 1rem;
+    font-size: larger;
+    height: 70%;
+}
+.messageName{
+    height: 30%;
+    box-sizing: border-box;
+    padding-inline-start: 0.5rem;
+}

@@ -1,0 +1,10 @@
+{
+    "SYSTEM":{
+        "name": "system",
+        "color": "green"
+    },
+    "::1":{
+        "name":"Swat",
+        "color":"cyan"
+    }
+}
